@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  .container{
+
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* height: 500px; */
+  }
+
+  .img-container{
+
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+   
+  }
+
+  .grid-item-1{
+    grid-column: 1/span 6;
+    grid-row: 1/span 4;
+  }
+  .grid-item-2{
+    grid-column: 7/span 6;
+    grid-row: 1/span 1;
+  }
+  .grid-item-3{
+    grid-column: 7/span 6;
+    grid-row: 2/span 1;
+  }
+  .grid-item-4{
+    grid-column: 7/span 2;
+    grid-row: 3/span 1;
+  }
+  .grid-item-5{
+    grid-column: 9/span 2;
+    grid-row: 3/span 1;
+  }
+  .grid-item-6{
+    grid-column: 11/span 2;
+    grid-row: 3/span 1;
+  }
+  .grid-item-7{
+    grid-column: 7/span 6;
+    grid-row: 4/span 1;
+  }
+
+  .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+
+
+
+  .text-container{
+
+    width: 48%;
+  }
+
+
+
+  /* media query codes starts here */
+  @media only screen and (max-width:500px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-container,.text-container{
+        width: 100%;
+    }
+    .img-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,1fr);
+    }
+    .grid-item-1{
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+     
+      }
+      .grid-item-2{
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+
+      }
+      .grid-item-3{
+        grid-column: 1/span 1;
+        grid-row: 3/span 1;
+     
+      }
+      .grid-item-4{
+        grid-column: 1/span 1;
+        grid-row: 4/span 1;
+        
+      }
+      .grid-item-5{
+        grid-column: 1/span 1;
+        grid-row: 5/span 1;
+        
+      }
+      .grid-item-6{
+        grid-column: 1/span 1;
+        grid-row: 6/span 1;
+        
+      }
+      .grid-item-7{
+        grid-column: 1/span 1;
+        grid-row: 7/span 1;
+        
+      }
+
+  }

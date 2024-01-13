@@ -1,0 +1,41 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 100vh;
+    border: 1px solid red;
+    padding: 10px;
+    gap:10px
+}
+
+.header{
+    background-color: red;
+    grid-column: 4/span 9;
+}
+.nav{
+    background-color: green;
+    grid-column: 1/span 3;
+    grid-row:1/span 4
+}
+.card-1{
+    background-color: orange;
+    grid-column: 4/span 3;
+    grid-row: 2/span 2;
+}
+.card-2{
+    background-color: aqua;
+    grid-column: 7/span 3;
+    grid-row: 2/span 2;
+}
+.card-3{
+    background-color: blue;
+    grid-column: 10/span 3;
+}
+.card-4{
+    grid-column: 10/ span 3;
+    background-color: blueviolet;
+}
+.footer{
+    background-color: gray;
+    grid-column: 4/span 9;
+}

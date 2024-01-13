@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.upper-footer{
+ 
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+    padding: 20px;
+    /* height: 200px; */
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+.upper-footer>div{
+
+    width: 24%;
+    flex-basis: 200px;
+}
+.upper-footer>div>div>.fa-brands{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.news-input{
+    display: block;
+    height: 50px;
+    width: 80%;
+    border: 0;
+    outline: 0;
+}
+.news-submit{
+    display: block;
+    height: 50px;
+    width: 80%;
+    border: 0;
+    outline: 0;
+    background-color: yellow;
+    margin-top: 10px;
+}
+
+.lower-footer{
+    display: flex;
+    background-color: gray;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.lower-footer a{
+ text-decoration: none;
+ margin-left: 10px;
+ color: black;
+}
